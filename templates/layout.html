@@ -8,8 +8,8 @@
 </head>
 <body>
     <a href="{{ url_for('index')}}">Home</a> |
-    <a href="{{ url_for('about')}}">About</a>
-    <a href="{{ url_for('favorite_foods')}}">Favorite Foods</a>
+    <a href="{{ url_for('about')}}">About</a> |
+    <a href="{{ url_for('favorite_foods')}}">Favorite Foods</a>|
     <a href="{{ url_for('favorite_sports')}}">Favorite Sports</a>
     <br>
    {% block content %}{% endblock %}
