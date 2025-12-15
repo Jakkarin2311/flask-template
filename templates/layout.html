@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Template - {% block title %}{% endblock %}
+    </title>
+</head>
+<body>
+    <a href="{{ url_for('index')}}">Home</a> |
+    <a href="{{ url_for('about')}}">About</a>
+    <a href="{{ url_for('favorite_foods')}}">Favorite Foods</a>
+    <a href="{{ url_for('favorite_sports')}}">Favorite Sports</a>
+    <br>
+   {% block content %}{% endblock %}
+   
+</body>
+</html>
