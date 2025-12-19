@@ -11,6 +11,8 @@
     <a href="{{ url_for('about')}}">About</a> |
     <a href="{{ url_for('favorite_foods')}}">Favorite Foods</a>|
     <a href="{{ url_for('favorite_sports')}}">Favorite Sports</a>
+    <a href="{{ url_for('greeting', username='username')}}">Greeting</a>
+    <a href="{{ url_for('favorite_movies')}}">Favorite Movies</a>
     <br>
    {% block content %}{% endblock %}
    

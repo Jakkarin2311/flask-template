@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template # type: ignore
 
 app = Flask(__name__)
 
@@ -40,3 +40,11 @@ def greeting(username):
     return render_template('welcome.html',
                            title=title,
                             username=username)
+
+@app.route('/favorite/movies')
+def favorite_movies():
+    title=" Favorite Movies Page"
+    movies = ['Inception', 'The Dark Knight', 'Interstellar', 'Parasite', 'Avengers: Endgame']
+    return render_template('fav_movies.html',
+                           title=title,
+                           movies=movies)
